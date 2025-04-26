@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  
+}
+#page1 {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #f7f7ee;
+    overflow: hidden;
+  }
+  
+  #page1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1; /* image behind nav */
+     
+  }
+#nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 4vh 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  
+}
+
+#nav-part2 {
+  display: flex;
+  gap: 30px;
+}
+#f1 {
+  height: 55px;
+  width: 230px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 2.4vh;
+  /* background-color: #F3F2F8; */
+  color: #5f6a4b;
+  border: 1px solid #5f6a4b;
+}
+
+#f2 {
+  height: 55px;
+  width: 160px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 2.4vh;
+  background-color: #5f6a4b;
+  color: #f3f2f8;
+}
+#f1:hover {
+  background-color: #e3e3c4;
+  cursor: pointer;
+}
+#f2:hover {
+  background-color: #434b34;
+  cursor: pointer;
+}
+#nav i {
+  display: inline-block; /* or block */
+  color: #5f6a4b;
+  font-size: 6vh;
+}
+#nav i:hover {
+  color: #383807;
+  cursor: pointer;
+}
+#content {
+  position: absolute;
+  /* height: 10vh;
+    width: 20vw; */
+  /* background-color: antiquewhite; */
+  z-index: 2;
+  left: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+}
+#content h1 {
+  font-size: 4.6vw;
+  font-family: PP Woodland;
+  color: #43430c;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+#hi {
+  font-size: 2.3vw;
+  font-family: PP Woodland;
+  color: #1e1e02;
+  letter-spacing: 4px;
+  font-weight: 400;
+}
+
+#page2{
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient( #4f583e,#5B6647) ;
+  padding: 5vw;
+ 
+}
+#page2 h1{
+  color:#434B34;
+  font-size: 4vw;
+  text-align: center;
+  font-weight: 400;
+  font-family: PP Woodland;
+  line-height: 4vw;;
+  opacity: 1;
+}
+#page2 h1 span{
+  font-family: PP Woodland;
+}
+#page3{
+  height: 15vh;
+  width: 100vw;
+  background: linear-gradient( #4f583e,#5B6647) ;
+  padding: 5vw;
+ 
+}
